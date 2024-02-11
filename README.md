@@ -3,7 +3,7 @@ The unofficial extension to the base game Lua library, adding new features and q
 
 With a non-intrusive opt-in approach running in the mod sandbox you can safely add this to any mod without any risk of version conflicts or bloating your mod. You choose what features to enable and to what extent you want to utilize the library.
 
-If you have any suggestions, find an issue or maybe even have your own nifty functions you want to share with others, we gladly accept your contribution (see the [Contribute](#contribute) section below for options and details).
+If you have any suggestions, find an issue or maybe even have your own nifty functions you want to share with others, we gladly accept your contribution (see the [Contribute](https://github.com/open-modding-alliance#-want-to-contribute) section below for options and details).
 
 ## INSTALLATION
 To install the FS Script Library you have three options:
