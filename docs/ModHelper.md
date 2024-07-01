@@ -25,7 +25,7 @@ g_currentModName
 g_currentModDirectory
 ```
 
-This means you **no longer need** to do the "local variable hack":
+This means you **no longer need** to do the "local variable hack" at the beginning of your script:
 ```lua
 local g_currentModSettingsDirectory = g_currentModSettingsDirectory
 local g_currentModName = g_currentModName
@@ -71,7 +71,6 @@ print(g_globalMods.AnotherGlobalMod.name) -- prints the name of the AnotherGloba
 |onMinuteChanged()| Event that is fired after `FSBaseMission.onMinuteChanged` |
 |||
 | **_Fields_** ||
-|||
 | dir | Mod directory (same as `g_currentModDirectory`) |
 | settingsDir | Mod settings directory, i.e. your `Documents\My Games\FarmingSimulator2022\modSettings\[YOUR_MOD_NAME]\` folder (same as `g_currentModSettingsDirectory`) |
 | name | The name of the mod (same as `g_currentModName`) |

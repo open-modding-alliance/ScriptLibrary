@@ -1,44 +1,26 @@
 --[[
 
-ModHelper (Weezls Mod Lib for FS22) - Simplifies the creation of script based mods for FS22
+ModHelper - Simplifies the creation of script based mods for Farming Simulator
 
-This utility class acts as a wrapper for Farming Simulator script based mods. It hels with setting up the mod up and 
-acting as a "bootstrapper" for the main mod class/table. It also add additional utility functions for sourcing additonal files, 
-manage user settings, assist debugging etc.
+This utility class (ported from WeezlsModLib) acts as a wrapper for Farming Simulator script based mods. 
+It hels with setting up the mod up and acting as a "bootstrapper" for the main mod class/table. 
+The class also adds additional utility (quality-of-life) functions, see documentation for details.
 
-See ModHelper.md (search my GitHub page for it since Giants won't allow "links" in the scripts) for documentation and more details.
-
-Author:     w33zl (https://github.com/w33zl)
-Version:    2.2.0
-Modified:   2023-08-07
-
-Changelog:
-v2.0        FS22 version
-v1.0        Initial public release
+Author(s):  Open Modding Alliance (w33zl)
+Version:    3.0.0
 
 License:    CC BY-NC-SA 4.0
 This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or 
 format for noncommercial purposes only, and only so long as attribution is given to the creator.
 If you remix, adapt, or build upon the material, you must license the modified material under identical terms. 
 
-]]
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
---[[
 
 USAGE:
 
 YourModName = Mod:init()
-
--- Logging and debugging (don't forget to add 'scripts/ModLib/LogHelper.lua' to <extraSourceFiles>)
---* debug(), var() and trace() will only print anything in the log if the file 'scripts/ModLib/DebugHelper.lua' is in your mod folder/zip archive
-Log:debug("This is a debug message")
-Log:var("name", "value")
-Log:trace("This is a trace message")
-Log:info("This is an info message")
-Log:warning("This is a warning message")
-Log:error("This is an error message")
 
 -- Events
 function YourModName:beforeLoadMap() end -- Super early event, caution!
@@ -50,8 +32,6 @@ function YourModName:update(dt) end -- Looped as long game is running (CAUTION! 
 ]]
 
 
-
--- This will create the "Mod" base class (and effectively reset any previous references to other mods) 
 Mod = {
 
     getIsMultiplayer = function(self) return g_currentMission.missionDynamicInfo.isMultiplayer end,
@@ -64,8 +44,6 @@ Mod = {
 }
 Mod_MT = {
 }
-
-
 
 local function getTrueGlobalG()
     return getmetatable(_G).__index
@@ -91,7 +69,6 @@ Mod.env.g_currentModName = Mod.name
 Mod.env.g_currentModDirectory = Mod.dir
 
 
-
 local modDescXML = loadXMLFile("modDesc", Mod.dir .. "modDesc.xml");
 Mod.title = getXMLString(modDescXML, "modDesc.title.en");
 Mod.author = getXMLString(modDescXML, "modDesc.author");
@@ -99,21 +76,6 @@ Mod.version = getXMLString(modDescXML, "modDesc.version");
 -- Mod.author = Mod.mod.author
 -- Mod.version = Mod.mod.version
 delete(modDescXML);
-
-
-
--- Helper functions
-local function validateParam(value, typeName, message)
-    local failed = false
-    failed = failed or (value == nil)
-    failed = failed or (typeName ~= nil and type(value) ~= typeName)
-    failed = failed or (type(value) == string and value == "")
-
-    if failed then print(message) end
-
-    return not failed
-end
-
 
 
 
