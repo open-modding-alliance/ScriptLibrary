@@ -5,6 +5,11 @@ With a non-intrusive opt-in approach running in the mod sandbox you can safely a
 
 If you have any suggestions, find an issue or maybe even have your own nifty functions you want to share with others, we gladly accept your contribution (see the [Contribute](https://github.com/open-modding-alliance#-want-to-contribute) section below for options and details).
 
+###
+
+**_Quick links:_ [Installation](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#installation) | [Getting Started](https://github.com/open-modding-alliance/BootstrapMod) | [Script Reference](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#reference)**
+
+
 ## INSTALLATION
 To install the FS Script Library you have three options:
 
@@ -13,13 +18,13 @@ The quickest way to get started with a new mod is the Bootstrap Mod that is the 
 
 
 
-### B. Automatic Installation
-Run the script below via the command line in the root of your mod folder (e.g. '%UserProfile%/Documents/FarmingSimulator2022/mods/MyMods'):
+### B. Automatic Installation _[DISABLED]_
+<!--Run the script below via the command line in the root of your mod folder (e.g. '%UserProfile%/Documents/FarmingSimulator2022/mods/MyMods'):
 ```bash
 curl -s http://myscript.com/download.bat | cmd
 ```
 _**IMPORTANT**! Never trust code you download from the internet, please review the contents of the script above (URL) if you are not certain about the content._
-
+-->
 
 ### C. Manual Installation
 
