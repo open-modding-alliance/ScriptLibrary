@@ -7,7 +7,7 @@ If you have any suggestions, find an issue or maybe even have your own nifty fun
 
 ###
 
-**_Quick links:_ [Installation](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#installation) | [Getting Started](https://github.com/open-modding-alliance/BootstrapMod) | [Script Reference](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#reference)**
+**_Quick links:_ [Installation](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#installation) | [Getting Started](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#getting-started) | [Script Reference](https://github.com/open-modding-alliance/ScriptLibrary?tab=readme-ov-file#reference)**
 
 
 ## INSTALLATION
