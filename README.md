@@ -1,4 +1,4 @@
-# FS Script Library
+# ⚙️FS Script Library
 The unofficial extension to the base game Lua library, adding new features and quality-of-life helper libraries, making this your one-stop-shop and starting point for all your mods. 
 
 With a non-intrusive opt-in approach running in the mod sandbox you can safely add this to any mod without any risk of version conflicts or bloating your mod. You choose what features to enable and to what extent you want to utilize the library.

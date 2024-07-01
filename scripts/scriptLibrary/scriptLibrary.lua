@@ -1,6 +1,6 @@
 --[[
 
-FS Script Library - A collection of utility/helper classes for Farming Simulator mods
+FS Script Library is a collection of new features and helpful utility classes for Farming Simulator mods
 
 Author(s):  Open Modding Alliance (w33zl)
 Version:    1.0.0
