@@ -35,21 +35,37 @@ _**IMPORTANT**! Never trust code you download from the internet, please review t
 
 ## REFERENCE
 
-**scriptLibrary/extensions/** - Extensions to base game classes 
-* [ModHelper](https://link-url-here.org) - QoL wrapper and helper library to create your script mod
+| Folder|Description|
+|-|-|
+| ui|UI/HUD related scripts|
+| placeables|Classes and utility scripts related to placeables|
+| specializations|Vehicle and placeable specializations|
+| extensions|General extension to base game classes|
+| utils|Helpers classes, e.g. to extend the string class or utilities for debugging|
+||
+| **misc**|**Other scripts not matching any of the above categories**|
+|[scriptLibrary](scripts/scriptLibrary/scriptLibrary.lua)|This is the main script for the FS Script Library, this file contains a reference to all possible other files, uncomment the files you want to include|
+|[ModHelper](scripts/scriptLibrary/ModHelper.lua)|QoL wrapper and helper library to create your script mod, this serves as a good starting point for all mods|
 
 
-> **scriptLibrary/extensions/**
+
+| File|Description|
+|-|-|
+|[scriptLibrary](scripts/scriptLibrary/scriptLibrary.lua)|This is the main script for the FS Script Library, this file contains a reference to all possible other files, uncomment the files you want to include|
+|[ModHelper](scripts/scriptLibrary/ModHelper.lua)|QoL wrapper and helper library to create your script mod, this serves as a good starting point for all mods|
+
+
+### extensions
+| File|Description|
+|-|-|
+|[ModHelper](https://link-url-here.org)|QoL wrapper and helper library to create your script mod|
+|||
 
 
 
-### ALL
+| _extensions_ |_General extension to base game classes_|
+|-|-|
+|[ModHelper](https://link-url-here.org)|QoL wrapper and helper library to create your script mod|
+|||
 
 
-* **extensions**: extension to base game classes
-  * [ModHelper](https://link-url-here.org)
-* **ui**: 
-* **placeables**: 
-* **specializations**: 
-* **utils**: 
-* **misc**: 
