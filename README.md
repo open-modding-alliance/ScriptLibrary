@@ -14,7 +14,9 @@ If you have any suggestions, find an issue or maybe even have your own nifty fun
 To install the FS Script Library you have three options:
 
 ### A. Get The Bootstrap Mod
-The quickest way to get started with a new mod is the Bootstrap Mod that is the foundation for a complete ready-to-run mod with _FS Script Library_ already installed. To add script library to an existing mod, the automatic or manual installation is recommended.
+The quickest way to get started with a new mod is the [Bootstrap Mod](https://github.com/open-modding-alliance/BootstrapMod) that is the foundation for a complete ready-to-run mod with _FS Script Library_ already installed. 
+
+To add script library to an existing mod, the automatic (B) or manual installation (C) is recommended.
 
 
 
@@ -29,8 +31,17 @@ _**IMPORTANT**! Never trust code you download from the internet, please review t
 ### C. Manual Installation
 
 1. Download the latest archive
-2. Unzip the zip archive to the root of your mod folder
-
+2. Unzip the zip archive to the root of your mod folder, it should look like this:
+  ```
+  yourMod\
+    scripts\
+      scriptLibrary\
+        ...
+        scriptLibrary.lua
+        ModHelper.lua
+    YourMod.lua
+  ```
+3. Follow the instructions in the [Getting Started](https://github.com/open-modding-alliance/BootstrapMod) section.
 
 ## GETTING STARTED
 
