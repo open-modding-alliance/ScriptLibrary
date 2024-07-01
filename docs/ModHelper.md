@@ -58,7 +58,7 @@ print(g_globalMods.AnotherGlobalMod.name) -- prints the name of the AnotherGloba
 | trySource(relativePath, silentFail) | Same as `source`, however this one first checks if the file actually exists and only prints a warning if the file doesn't exists (or nothing if `silentFail` is true) |
 | loadSound(name, fileName) | QoL function to load sounds, wrapper for `createSample(name)` and `loadSample` with `fileName` as parameter |
 |||
-| **_Events** ||
+| **_Events_** ||
 |beforeStartMission()| Event that is fired before `FSBaseMission.onStartMission` |
 |beforeStartMission()| Event that is fired after `FSBaseMission.onStartMission` |
 |load()| Event that is fired after `FSBaseMission.load` |
