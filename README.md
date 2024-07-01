@@ -85,10 +85,10 @@ _**Note:** Using the `Mod` helper class in step 5 is optional, you can create th
 
 ## REFERENCE
 
-| _Folder_ | _File_ | _Description_ |
+| _Folder_ | _File (.lua)_ | _Description_ |
 |-|-|-|
 |_(no folder)_|||
-||[scriptLibrary](scripts/scriptLibrary/scriptLibrary.lua) | This is the main script for the FS Script Library, this file contains a reference to all possible other files, uncomment the files you want to include. |
+||[scriptLibrary](docs/ScriptLibrary.md) | This is the main script for the FS Script Library, this file contains a reference to all possible other files, uncomment the files you want to include. |
 || [ModHelper](docs/ModHelper.md) | QoL wrapper and helper library to create your script mod, this serves as a good starting point for all mods, see documentation for all available functions and properties provided by the helper class. |
 ||||
 | **ui** || **UI/HUD related scripts** |
