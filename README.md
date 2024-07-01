@@ -27,10 +27,44 @@ _**IMPORTANT**! Never trust code you download from the internet, please review t
 2. Unzip the zip archive to the root of your mod folder
 
 
-## USAGE
-
-
 ## GETTING STARTED
+
+**1. Install FS Script Library to your mod**
+
+**2. Add the _scriptLibrary.lua_ file to the _&lt;extraSourceFiles&gt;_ section of your _modDesc.xml_:**
+
+```xml
+<extraSourceFiles>
+    <sourceFile filename="scripts/scriptLibrary/scriptLibrary.lua" />
+</extraSourceFiles>`
+```
+
+**3. Uncomment the files you want to include from the _scriptLibrary.lua_ file, e.g:**
+
+```lua
+-- ### Specializations (disabled by default) ###
+source(g_scriptLibraryDir .. "defaultDisabled.lua")
+--source(g_scriptLibraryDir .. "alsoDisabledByDefault.lua")
+```
+
+**4. Create your main mod script file (e.g. MyMod.lua) and add it to the _&lt;extraSourceFiles&gt;_ section of your _modDesc.xml_**
+   
+**5. _[optional]_ Add the following snippet to your main mod script file:**
+
+```lua
+-- Creates a new mod object (listening to mod events such as loadMap etc)
+YourModName = Mod:init()
+
+-- Executed when the map has finished loading, a good place to begin your mod initialization
+function YourModName:loadMap(filename) 
+  print("Map is loaded")
+end 
+```
+
+**6. Try your mod**
+ 
+_**Note:** Using the `Mod` helper class in step 5 is optional, you can create the mod however you like, this is just the quick and easy way to get started._
+
 
 
 ## REFERENCE
